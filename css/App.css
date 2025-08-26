@@ -1,8 +1,11 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+/* i don't want links to be underlined :wena: */
+a {
+  text-decoration: none;
 }
 
 .logo {
@@ -12,10 +15,15 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #ff004cc5);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.navlogo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.navlogo:hover {
+  filter: drop-shadow(0 0 2em #ffffffff);
 }
 
 @keyframes logo-spin {
@@ -31,6 +39,10 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+.logo.spin {
+    animation: logo-spin infinite 20s linear;
 }
 
 .card {
