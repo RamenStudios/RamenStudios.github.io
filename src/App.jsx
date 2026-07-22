@@ -4,7 +4,7 @@ import ramenLogo from '/icon.svg'
 
 function App() {
   return (
-    <div>
+    <div className="container-fluid gx-0">
       <Header logo={ramenLogo}/>
       <div class="container-lg">
         <a href="/" target="_blank">
