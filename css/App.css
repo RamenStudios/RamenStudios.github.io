@@ -20,8 +20,20 @@ a {
 
 .navlogo {
   will-change: filter;
+  position: absolute;
+  top: -6em;
+  left: -1em;
   transition: filter 300ms;
 }
+
+.navlogopos {
+  position: relative;
+  width: 50%;
+
+  top: -1.15em;
+  left: 0;
+}
+
 .navlogo:hover {
   filter: drop-shadow(0 0 2em #ffffffff);
 }
