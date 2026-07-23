@@ -9,7 +9,7 @@ export const Header = ({logo, current}) =>
     return(
         <Navbar expand="lg" class="bebas" style={{backgroundColor: '#000000ff', height: '4em'}} data-bs-theme="dark">
             <Container fluid>
-                <Navbar.Brand className="navlogopos" href="/"><img src={logo} className="navlogo" alt="Ramenstudios Logo"  width="310" height="304"/></Navbar.Brand>
+                <Navbar.Brand className="navlogopos" href="/"><img src={logo} className="navlogo" alt="Ramenstudios Logo"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarNav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>

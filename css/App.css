@@ -23,15 +23,18 @@ a {
   position: absolute;
   top: -6em;
   left: -1em;
+  width: 19.375em;
+  height: 19em;
   transition: filter 300ms;
 }
 
 .navlogopos {
   position: relative;
-  width: 50%;
-
+  width: 75%;
+  height: 4em;
   top: -1.15em;
   left: 0;
+  overflow-y: hidden;
 }
 
 .navlogo:hover {
