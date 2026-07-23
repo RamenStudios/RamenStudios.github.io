@@ -7,16 +7,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export const Header = ({logo, current}) =>
 {
     return(
-        <Navbar expand="lg" class="bebas" style={{backgroundColor: '#000000ff', height: '4em'}} data-bs-theme="dark">
+        <Navbar expand="lg" class="bebas" style={{backgroundColor: '#000000ff', height: '5em'}} data-bs-theme="dark">
             <Container fluid>
                     <div className="d-inline-block col-md-3">
                         <Navbar.Brand  href="/">
                             <img src={logo} className="navlogo d-none d-lg-inline-block" alt="Ramenstudios Logo"/>
                         </Navbar.Brand>
                     </div>
-                    <div className="d-inline-block col-xxl-9">
+                    <div className="d-inline-block col-lg-9">
                         <Navbar.Toggle aria-controls="navbarNav"/>
-                        <Navbar.Collapse id="basic-navbar-nav">
+                        <Navbar.Collapse id="basic-navbar-nav" style={{backgroundColor: '#000000ff'}}>
                             <Nav>
                                 <Nav.Link class="active mt-2 mx-2" aria-current="page" href="#"><h1>Home</h1></Nav.Link>
                                 <Nav.Link class="active mt-2 mx-2" aria-current="page" href="#"><h1>About</h1></Nav.Link>

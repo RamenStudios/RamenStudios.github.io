@@ -20,8 +20,8 @@ a {
 
 .navlogo {
   position: relative;
-  left: -1.75em;
-  clip-path: rect(-10px 200% 58.5% 5px);
+  left: -3.25em;
+  clip-path: rect(-10px 200% 60.5% 5px);
   will-change: filter;
   width: 19.375em;
   height: 19em;
