@@ -19,10 +19,10 @@ a {
 }
 
 .navlogo {
+  position: relative;
+  left: -1.75em;
+  clip-path: rect(-10px 200% 58.5% 5px);
   will-change: filter;
-  position: absolute;
-  top: -6em;
-  left: -1em;
   width: 19.375em;
   height: 19em;
   transition: filter 300ms;
@@ -30,11 +30,8 @@ a {
 
 .navlogopos {
   position: relative;
-  width: 75%;
-  height: 4em;
-  top: -1.15em;
-  left: 0;
-  overflow-y: hidden;
+  top: -10em;
+  left: -10em;
 }
 
 .navlogo:hover {
