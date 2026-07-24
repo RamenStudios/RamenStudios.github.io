@@ -15,7 +15,7 @@ export const Header = ({logo, current}) =>
                         </Navbar.Brand>
                     </div>
                     <div className="col-lg-9 col-12 gy-0">
-                        <Navbar.Toggle className="toggler-override gy-0" style={{width:"22em", height:'4em'}} aria-controls="navbarNav">
+                        <Navbar.Toggle className="toggler-override gy-0" style={{width:"100%", height:'4em'}} aria-controls="navbarNav">
                              <img className="toggler-logo" src={logo} alt="Ramenstudios Logo"/>
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav" style={{backgroundColor: '#000000ff'}}>
