@@ -1,12 +1,8 @@
 import App from "../App"
-import { Spinner } from "./Spinner"
 
 export const About = () => {
     return (
         <div>
-            <div class="container-lg">
-                <Spinner/>
-            </div>
             <h1>WHO OR WHAT IS RAMENSTUDIOS?</h1>
             <div class="row">
                 <div class="col-6 justify-content-start">
