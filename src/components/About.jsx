@@ -1,7 +1,7 @@
 import App from "../App"
 import { Spinner } from "./Spinner"
 
-const AboutContent = () => {
+export const About = () => {
     return (
         <div>
             <div class="container-lg">
@@ -29,11 +29,5 @@ const AboutContent = () => {
                 </div>
             </div>
         </div>
-    )
-}
-
-export const About = () => {
-    return (
-        <App content={AboutContent()}/>
     )
 }

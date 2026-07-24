@@ -2,7 +2,7 @@ import App from "../App"
 import { ImgCard } from "../../public/ImgCard"
 import { Spinner } from "./Spinner"
 
-const HomeContent = () => {
+export const Home = () => {
     return (
         <div class="container-lg justify-content-center">
             <div 
@@ -41,11 +41,5 @@ const HomeContent = () => {
                 </div>
             </div>
         </div>
-    )
-}
-
-export const Home = () => {
-    return (
-        <App content={HomeContent()}/>
     )
 }

@@ -21,7 +21,7 @@ export const Header = ({logo, current}) =>
                         <Navbar.Collapse id="basic-navbar-nav" style={{backgroundColor: '#000000ff'}}>
                             <Nav>
                                 <Nav.Link class="active mt-2 mx-2" aria-current="page" href="#"><h1>Home</h1></Nav.Link>
-                                <Nav.Link class="active mt-2 mx-2" aria-current="page" href="#"><h1>About</h1></Nav.Link>
+                                <Nav.Link class="active mt-2 mx-2" aria-current="page" href="/about"><h1>About</h1></Nav.Link>
                                 <Nav.Link class="active mt-2 mx-2" aria-current="page" href="https://github.com/RamenStudios"><h1>Github</h1></Nav.Link>
                                 <Nav.Link class="active mt-2 mx-2" aria-current="page" href="#"><h1>Projects</h1></Nav.Link>
                                 <Nav.Link class="active mt-2 mx-2" aria-current="page" href="#"><h1>Portfolio</h1></Nav.Link>
