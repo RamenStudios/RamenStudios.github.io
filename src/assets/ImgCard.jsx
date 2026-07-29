@@ -1,15 +1,19 @@
 export const ImgCard = ({source, alt, caption}) => {
     return (
-        <div class="card text-bg-dark m-0 g-0 p-0 border-0 align-items-end">
+        <div 
+            class="imgcard card text-bg-dark my-3 g-0 p-0 border-0 align-items-end"
+            style={{
+                backgroundColor: "0x000000"
+            }}
+        >
             <img 
                 src={source} 
-                class="card-img" 
+                class="imgcard-img card-img" 
                 alt={alt}
                 style={{
                     width: '100%',
                     height: '100%',
-                    objectFit: 'fill',
-                    opacity: '75%'
+                    objectFit: 'fill'
                 }}
             />
             <div 

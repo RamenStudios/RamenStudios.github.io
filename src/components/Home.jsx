@@ -6,7 +6,7 @@ export const Home = () => {
     return (
         <div class="container-lg justify-content-center">
             <div 
-                class="row mb-3 align-items-center justify-content-center bg-danger border border-danger border-5"
+                class="row mb-4 align-items-center justify-content-center bg-danger border border-danger border-5"
                 style={{minHeight:"20em"}}
             >
                 <div class="col-lg-3 col-sm-6 border border-danger border-5">

@@ -31,7 +31,7 @@ a {
   box-shadow: none !important;
 }
 
-.navlogo, .toggler-logo {
+.navlogo, .toggler-logo, .imgcard {
   will-change: filter;
   transition: filter 300ms;
 }
@@ -50,6 +50,19 @@ a {
 
 :is(.navlogo, .toggler-logo):hover {
   filter: drop-shadow(0 0 2em #ffffffff);
+}
+
+.imgcard:hover {
+  filter: drop-shadow(0 1rem 1.5rem #000000);
+}
+
+.imgcard-img {
+  opacity: 0.5;
+  transition: opacity 300ms ease-in-out; 
+}
+
+.imgcard:hover .imgcard-img {
+  opacity: 1;
 }
 
 @keyframes logo-spin {
