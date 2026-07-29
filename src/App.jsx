@@ -13,6 +13,7 @@ function App() {
         <a href="/" target="_blank">
           <img src={ramenLogo} className="logo spin" alt="Ramen logo" />
         </a>
+        <p>very much under construction. pardon the mess!</p>
       </div>
       <BrowserRouter>
         <Routes>

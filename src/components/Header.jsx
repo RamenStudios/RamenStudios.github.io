@@ -18,14 +18,14 @@ export const Header = ({logo, current}) =>
                         <Navbar.Toggle className="toggler-override gy-0" style={{width:"100%", height:'4em'}} aria-controls="navbarNav">
                              <img className="toggler-logo" src={logo} alt="Ramenstudios Logo"/>
                         </Navbar.Toggle>
-                        <Navbar.Collapse id="basic-navbar-nav" style={{backgroundColor: '#000000ff'}}>
+                        <Navbar.Collapse id="basic-navbar-nav align-items-start" >
                             <Nav>
-                                <Nav.Link class="active mt-2 mx-2" aria-current="page" href="/"><h1>Home</h1></Nav.Link>
-                                <Nav.Link class="active mt-2 mx-2" aria-current="page" href="/about"><h1>About</h1></Nav.Link>
-                                <Nav.Link class="active mt-2 mx-2" aria-current="page" href="https://github.com/RamenStudios"><h1>Github</h1></Nav.Link>
-                                <Nav.Link class="active mt-2 mx-2" aria-current="page" href="#"><h1>Projects</h1></Nav.Link>
-                                <Nav.Link class="active mt-2 mx-2" aria-current="page" href="#"><h1>Portfolio</h1></Nav.Link>
-                                <Nav.Link class="active mt-2 mx-2" aria-current="page" href="#"><h1>Videos</h1></Nav.Link>
+                                <Nav.Link class="nav-link" aria-current="page" href="/">Home</Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="/about">About</Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="https://github.com/RamenStudios">Github</Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="#">Projects</Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="#">Portfolio</Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="#">Videos</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </div>

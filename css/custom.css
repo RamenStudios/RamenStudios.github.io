@@ -3745,7 +3745,7 @@ textarea.form-control-lg {
 
 .nav {
   --bs-nav-link-padding-x: 1rem;
-  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-padding-y: 0;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
@@ -3753,7 +3753,7 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   list-style: none;
 }
 
@@ -3941,7 +3941,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 3rem;
   list-style: none;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
