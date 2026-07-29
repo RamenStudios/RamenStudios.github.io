@@ -1,6 +1,6 @@
 export const ImgCard = ({source, alt, caption}) => {
     return (
-        <div class="card text-bg-dark m-0 g-0 p-0 border-0">
+        <div class="card text-bg-dark m-0 g-0 p-0 border-0 align-items-end">
             <img 
                 src={source} 
                 class="card-img" 
@@ -12,14 +12,20 @@ export const ImgCard = ({source, alt, caption}) => {
                     opacity: '75%'
                 }}
             />
-            <div class="card-img-overlay align-items-end py-0 px-1">
+            <div 
+                class="card-img-overlay py-0 px-1"
+                style={{
+                    position:'absolute',
+                    top: '103%'
+                }}
+            >
                 <div 
                     class="d-flex align-items-end mt-0"
                     style={{
-                        width:'100%',
-                        height: '120%',
-                        fontSize: '5vw',
-                        textShadow: '0 0 1vw #000000'
+                        width:'1rem',
+                        height: '1.2rem',
+                        fontSize: '4rem',
+                        textShadow: '0.2rem 0.2rem 1.25rem #000000'
                     }}
                 >
                     {caption}
