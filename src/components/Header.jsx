@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export const Header = ({logo, current}) =>
 {
     return(
-        <Navbar expand="lg" class="bebas" sticky="top" style={{backgroundColor: '#000000ff', height: '5em'}} data-bs-theme="dark">
+        <Navbar expand="lg" class="bebas" sticky="top" style={{backgroundColor: '#000000ff', height: '5rem'}} data-bs-theme="dark">
             <Container className='gx-0' fluid style={{height:'5em'}}>
                     <div className="col-lg-3 d-none d-lg-inline-block">
                         <Navbar.Brand href="/">
@@ -18,14 +18,26 @@ export const Header = ({logo, current}) =>
                         <Navbar.Toggle className="toggler-override gy-0" style={{width:"100%", height:'4em'}} aria-controls="navbarNav">
                              <img className="toggler-logo" src={logo} alt="Ramenstudios Logo"/>
                         </Navbar.Toggle>
-                        <Navbar.Collapse id="basic-navbar-nav align-items-start" >
+                        <Navbar.Collapse id="basic-navbar-nav" className='align-items-end'>
                             <Nav>
-                                <Nav.Link class="nav-link" aria-current="page" href="/">Home</Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="/about">About</Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="https://github.com/RamenStudios">Github</Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#">Projects</Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#">Portfolio</Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#">Videos</Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="/">
+                                    <div className='nav-link-container'>Home</div>
+                                </Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="/about">
+                                    <div className='nav-link-container'>About</div>
+                                </Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="https://github.com/RamenStudios">
+                                    <div className='nav-link-container'>GitHub</div>
+                                </Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="#">
+                                    <div className='nav-link-container'>Projects</div>
+                                </Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="#">
+                                    <div className='nav-link-container'>Portfolio</div>
+                                </Nav.Link>
+                                <Nav.Link class="nav-link"  aria-current="page" href="#">
+                                    <div className='nav-link-container'>Videos</div>
+                                </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </div>

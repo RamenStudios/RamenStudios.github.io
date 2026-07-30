@@ -3744,27 +3744,27 @@ textarea.form-control-lg {
 }
 
 .nav {
-  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-x: 0.5rem;
   --bs-nav-link-padding-y: 0;
-  --bs-nav-link-font-weight: ;
+  --bs-nav-link-font-weight: 1rem;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   list-style: none;
 }
 
 .nav-link {
   display: block;
-  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-  font-size: var(--bs-nav-link-font-size);
+  padding: 0 var(--bs-nav-link-padding-x);
+  font-size: 5rem;
   font-weight: var(--bs-nav-link-font-weight);
   color: var(--bs-nav-link-color);
   text-decoration: none;
-  background: none;
+  margin: 0 0.45rem 0;
   border: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3941,8 +3941,10 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin-bottom: 3rem;
+  margin-top: 0.5rem;
   list-style: none;
+  vertical-align: bottom;
+  overflow: hidden;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: var(--bs-navbar-active-color);
@@ -3952,8 +3954,6 @@ textarea.form-control-lg {
 }
 
 .navbar-text {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   color: var(--bs-navbar-color);
 }
 .navbar-text a,
