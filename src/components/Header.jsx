@@ -23,19 +23,19 @@ export const Header = ({logo, current}) =>
                                 <Nav.Link class="nav-link"  aria-current="page" href="/">
                                     <div className='nav-link-container'>Home</div>
                                 </Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="/about">
+                                <Nav.Link class="nav-link"  aria-current="page" href="#/about">
                                     <div className='nav-link-container'>About</div>
                                 </Nav.Link>
                                 <Nav.Link class="nav-link"  aria-current="page" href="https://github.com/RamenStudios">
                                     <div className='nav-link-container'>GitHub</div>
                                 </Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#">
+                                <Nav.Link class="nav-link"  aria-current="page" href="#/projects">
                                     <div className='nav-link-container'>Projects</div>
                                 </Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#">
+                                <Nav.Link class="nav-link"  aria-current="page" href="#/portfolio">
                                     <div className='nav-link-container'>Portfolio</div>
                                 </Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#">
+                                <Nav.Link class="nav-link"  aria-current="page" href="#/videos">
                                     <div className='nav-link-container'>Videos</div>
                                 </Nav.Link>
                             </Nav>
