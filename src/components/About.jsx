@@ -2,7 +2,7 @@ import App from "../App"
 
 export const About = () => {
     return (
-        <div>
+        <div className="content-container container-lg justify-content-center">
             <h1>WHO OR WHAT IS RAMENSTUDIOS?</h1>
             <div class="row">
                 <div class="col-6 justify-content-start">
