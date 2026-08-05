@@ -3,13 +3,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { CustomNavLink } from '../assets/CustomNavLink' 
 
-const toggleHelper = () => {
-    const toggler = document.getElementById('navToggler')
-    if (toggler.checkVisibility()) {
-        toggler.click()
-    }
-}
+// generate tabs
+const MainTabs =    [
+                        {href: 'home'},
+                        {href: 'about'},
+                        {href: 'https://github.com/RamenStudios', isLink: true, name: 'GITHUB'},
+                        {href: 'projects'},
+                        {href: 'portfolio'},
+                        {href: 'videos'},
+                    ]
 
 export const Header = ({logo, current}) =>
 {
@@ -31,25 +35,8 @@ export const Header = ({logo, current}) =>
                              <img className="toggler-logo" src={logo} alt="Ramenstudios Logo"/>
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav" className='align-items-end'>
-                            <Nav>
-                                <Nav.Link class="nav-link"  aria-current="page" href="/">
-                                    <div className='nav-link-container'>Home</div>
-                                </Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#/about">
-                                    <div className='nav-link-container' onClick={toggleHelper}>About</div>
-                                </Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="https://github.com/RamenStudios">
-                                    <div className='nav-link-container'>GitHub</div>
-                                </Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#/projects">
-                                    <div className='nav-link-container' onClick={toggleHelper}>Projects</div>
-                                </Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#/portfolio">
-                                    <div className='nav-link-container' onClick={toggleHelper}>Portfolio</div>
-                                </Nav.Link>
-                                <Nav.Link class="nav-link"  aria-current="page" href="#/videos">
-                                    <div className='nav-link-container' onClick={toggleHelper}>Videos</div>
-                                </Nav.Link>
+                            <Nav defaultActiveKey="#/home">
+                                {MainTabs.map((tab) => (CustomNavLink(tab)))}
                             </Nav>
                         </Navbar.Collapse>
                     </div>

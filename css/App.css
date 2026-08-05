@@ -1,6 +1,7 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  --ramen-red: #f93228;
 }
 
 /* i don't want links to be underlined :wena: */
@@ -27,6 +28,10 @@ a {
   top: -1rem;
   background-color: #000000;
   height: clamp(6rem, 6.5rem, 7rem);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--ramen-red);
 }
 
 .navlogo {
