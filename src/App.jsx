@@ -3,6 +3,9 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Home } from './components/Home'
 import { About } from './components/About'
+import { Portfolio } from './components/Portfolio'
+import { Videos } from './components/Videos'
+import { Projects } from './components/Projects'
 import ramenLogo from '/icon.svg'
 import { HashRouter, Routes, Route } from "react-router";
 
@@ -20,6 +23,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </HashRouter>
       <Footer/>

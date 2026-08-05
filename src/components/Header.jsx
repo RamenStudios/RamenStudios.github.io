@@ -4,6 +4,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+const toggleHelper = () => {
+    const toggler = document.getElementById('navToggler')
+    if (toggler.checkVisibility()) {
+        toggler.click()
+    }
+}
+
 export const Header = ({logo, current}) =>
 {
     return(
@@ -15,7 +22,12 @@ export const Header = ({logo, current}) =>
                         </Navbar.Brand>
                     </div>
                     <div className="col-lg-9 col-12 gy-0">
-                        <Navbar.Toggle className="toggler-override gy-0" style={{width:"100%", height:'4em'}} aria-controls="navbarNav">
+                        <Navbar.Toggle 
+                            id="navToggler"    
+                            className="toggler-override gy-0" 
+                            style={{width:"100%", height:'4em'}} 
+                            aria-controls="navbarNav"
+                        >
                              <img className="toggler-logo" src={logo} alt="Ramenstudios Logo"/>
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav" className='align-items-end'>
@@ -24,19 +36,19 @@ export const Header = ({logo, current}) =>
                                     <div className='nav-link-container'>Home</div>
                                 </Nav.Link>
                                 <Nav.Link class="nav-link"  aria-current="page" href="#/about">
-                                    <div className='nav-link-container'>About</div>
+                                    <div className='nav-link-container' onClick={toggleHelper}>About</div>
                                 </Nav.Link>
                                 <Nav.Link class="nav-link"  aria-current="page" href="https://github.com/RamenStudios">
                                     <div className='nav-link-container'>GitHub</div>
                                 </Nav.Link>
                                 <Nav.Link class="nav-link"  aria-current="page" href="#/projects">
-                                    <div className='nav-link-container'>Projects</div>
+                                    <div className='nav-link-container' onClick={toggleHelper}>Projects</div>
                                 </Nav.Link>
                                 <Nav.Link class="nav-link"  aria-current="page" href="#/portfolio">
-                                    <div className='nav-link-container'>Portfolio</div>
+                                    <div className='nav-link-container' onClick={toggleHelper}>Portfolio</div>
                                 </Nav.Link>
                                 <Nav.Link class="nav-link"  aria-current="page" href="#/videos">
-                                    <div className='nav-link-container'>Videos</div>
+                                    <div className='nav-link-container' onClick={toggleHelper}>Videos</div>
                                 </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
