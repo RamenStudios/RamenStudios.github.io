@@ -21,7 +21,7 @@ export const CustomNavLink = (props) => {
     }
     return (
         <Nav.Link class="nav-link"  aria-current="page" {...LinkProps}>
-            <div className='nav-link-container' onClick={toggleHelper}>
+            <div className='nav-link-container ' onClick={toggleHelper}>
                 {tabName}
             </div>
         </Nav.Link>

@@ -4,6 +4,12 @@
   --ramen-red: #f93228;
 }
 
+.red {
+  background-color: var(--ramen-red);
+  border-color: var(--ramen-red);
+  color: var(--ramen-red);
+}
+
 /* i don't want links to be underlined :wena: */
 a {
   text-decoration: none;
@@ -24,10 +30,15 @@ a {
 }
 
 .nav-link-container {
-  position: relative;
-  top: -1rem;
   background-color: #000000;
-  height: clamp(6rem, 6.5rem, 7rem);
+}
+
+@media (min-width: 768px) {
+  .nav-link-container {
+    position: relative;
+    top: -.35em;
+    height: 1em;
+  }
 }
 
 .navbar-nav .nav-link.active {

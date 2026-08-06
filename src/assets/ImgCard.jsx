@@ -3,7 +3,8 @@ export const ImgCard = ({source, alt, caption}) => {
         <div 
             class="imgcard card text-bg-dark my-3 g-0 p-0 border-0 align-items-end"
             style={{
-                backgroundColor: "0x000000"
+                backgroundColor: "0x000000",
+                aspectRatio: "3/4"
             }}
         >
             <img 
@@ -13,7 +14,7 @@ export const ImgCard = ({source, alt, caption}) => {
                 style={{
                     width: '100%',
                     height: '100%',
-                    objectFit: 'fill'
+                    objectFit: 'cover'
                 }}
             />
             <div 

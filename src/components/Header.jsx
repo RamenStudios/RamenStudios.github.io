@@ -34,7 +34,7 @@ export const Header = ({logo, current}) =>
                         >
                              <img className="toggler-logo" src={logo} alt="Ramenstudios Logo"/>
                         </Navbar.Toggle>
-                        <Navbar.Collapse id="basic-navbar-nav" className='align-items-end'>
+                        <Navbar.Collapse id="basic-navbar-nav" className='align-items-end pt-3'>
                             <Nav defaultActiveKey="#/home">
                                 {MainTabs.map((tab) => (CustomNavLink(tab)))}
                             </Nav>
