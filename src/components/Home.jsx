@@ -1,6 +1,5 @@
 import App from "../App"
 import { ImgCard } from "../assets/ImgCard"
-import { Spinner } from "./Spinner"
 
 export const Home = () => {
     return (

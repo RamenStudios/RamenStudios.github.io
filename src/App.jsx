@@ -3,10 +3,11 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Home } from './components/Home'
 import { About } from './components/About'
-import { Portfolio } from './components/Portfolio'
-import { Videos } from './components/Videos'
-import { Projects } from './components/Projects'
+import { Portfolio } from './components/Portfolio/Portfolio'
+import { Videos } from './components/Videos/Videos'
+import { Projects } from './components/Projects/Projects'
 import ramenLogo from '/icon.svg'
+import { Spinner } from './assets/Spinner'
 import { HashRouter, Routes, Route } from "react-router";
 
 function App() {
@@ -15,9 +16,7 @@ function App() {
       <HashRouter>
         <Header logo={ramenLogo}/>
         <div class="container-lg">
-          <a href="/" target="_blank">
-            <img src={ramenLogo} className="logo spin" alt="Ramen logo" />
-          </a>
+          <Spinner/>
           <p>very much under construction. pardon the mess!</p>
         </div>
         <Routes>
