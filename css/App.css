@@ -1,5 +1,6 @@
 #root {
   margin: 0 auto;
+  font-size: 1.5rem;
   text-align: center;
   --ramen-red: #f93228;
 }
@@ -56,6 +57,19 @@ a {
 .navlogo, .toggler-logo, .toggler-override {
   outline: none !important;
   box-shadow: none !important;
+}
+
+.toggler-override {
+  position: fixed;
+  top: -0.025em;
+  left: 0;
+}
+
+@media (min-width: 992px) {
+  .toggler-override {
+    position: relative;
+    top: -1em;
+  }
 }
 
 .navlogo, .toggler-logo, .imgcard {

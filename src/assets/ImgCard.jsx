@@ -21,7 +21,7 @@ export const ImgCard = ({source, alt, caption}) => {
                 class="card-img-overlay py-0 px-1"
                 style={{
                     position:'absolute',
-                    top: '103%'
+                    top: '102%'
                 }}
             >
                 <div 
