@@ -42,6 +42,23 @@ a {
   }
 }
 
+.tab-nav {
+  background-color: black;
+  -webkit-text-fill-color: #ffffffff;
+  font-size: 5vh;
+}
+
+.tab-nav.nav-link.active {
+  background-color: black;
+  -webkit-text-fill-color: var(--ramen-red);
+  box-shadow: .1em .1em .5em #000000;
+}
+
+.tab-nav-pills {
+  position: relative;
+  top: -3rem;
+}
+
 .navbar-nav .nav-link.active {
   color: var(--ramen-red);
 }
