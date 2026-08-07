@@ -103,6 +103,8 @@ a {
     position: relative;
     top: -1em;
   }
+  .img-card-row {
+  }
 }
 
 .navlogo, .toggler-logo, .imgcard {
