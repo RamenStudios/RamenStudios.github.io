@@ -46,17 +46,33 @@ a {
   background-color: black;
   -webkit-text-fill-color: #ffffffff;
   font-size: 5vh;
+  border-radius: 0% !important; 
+  text-align: left;
+  padding-left: 0.5em;
 }
 
 .tab-nav.nav-link.active {
-  background-color: black;
-  -webkit-text-fill-color: var(--ramen-red);
+  position: relative;
+  bottom: 0.3rem;
+  background-color: var(--ramen-red);
+  -webkit-text-fill-color: #ffffff;
   box-shadow: .1em .1em .5em #000000;
+  z-index: 2 !important;
 }
 
 .tab-nav-pills {
   position: relative;
-  top: -3rem;
+  bottom: -1rem;
+  left: -0.45rem;
+}
+.tab-nav.right-pill {
+  position: relative;
+  left: -10rem;
+}
+
+.tab-row {
+  position: relative;
+  z-index: 3;
 }
 
 .navbar-nav .nav-link.active {

@@ -45,22 +45,20 @@ export const Home = () => {
     return (
         <div className="content-container container-fluid  justify-content-center">
             <Tab.Container id="hometabs" defaultActiveKey="1">
-                <div className="row">
+                <div className="row mx-xl-3 mx-1 gy-0 my-0 tab-nav-pills">          
+                    <Nav variant="pills">
+                        <Nav.Item className="col-6 col-xl-2">
+                            <Nav.Link className="tab-nav" eventKey="1">COMPSCI</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item className="col-6 col-xl-2">
+                            <Nav.Link className="tab-nav right-pill" eventKey="2">STUDIO ART</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </div>
+                <div className="row tab-row">
                     <Tab.Content>
                         {Cards.map((card) => (PaneHelper(card)))}
                     </Tab.Content>
-                </div>
-                <div className="row mx-lg-5 gy-0 my-0 tab-nav-pills">          
-                    <Nav variant="pills">
-                        <div className="col-0 col-lg-3"/>
-                        <Nav.Item className="col-6 col-lg-3">
-                            <Nav.Link className="tab-nav" eventKey="1">COMPSCI</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item className="col-6 col-lg-3">
-                            <Nav.Link className="tab-nav" eventKey="2">STUDIO ART</Nav.Link>
-                        </Nav.Item>
-                        <div className="col-0 col-lg-3"/>
-                    </Nav>
                 </div>
             </Tab.Container>
         </div>

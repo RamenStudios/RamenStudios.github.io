@@ -15,7 +15,7 @@ function App() {
     <div className="container-fluid gx-0">
       <HashRouter>
         <Header logo={ramenLogo}/>
-        <div class="container-lg">
+        <div class="container-lg my-0 g-0">
           <Spinner/>
           <p>very much under construction. pardon the mess!</p>
         </div>
