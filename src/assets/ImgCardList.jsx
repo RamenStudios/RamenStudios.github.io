@@ -11,7 +11,9 @@ const ImgCardColumn = (card) => {
 export const ImgCardList = (cards) => {
     return (
         <div 
-            className="row p-2 mb-5 mx-xl-3 mx-1 align-items-center justify-content-center border-5 red img-card-row">
+            className="row p-2 mb-5 mx-xl-3 mx-1 align-items-center justify-content-center border-5 red img-card-row"
+            style={{minHeight:"20vh"}}
+        >
             {cards.map((card) => (ImgCardColumn(card)))}
         </div>
     )
