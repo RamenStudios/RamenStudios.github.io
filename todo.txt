@@ -1,0 +1,63 @@
+Each category will be a filter on the corresponding page
+
+TECHNICAL
+    => WEBDEV
+        - realmath
+        - portfolio site
+        - blizzard project
+    => SOFTWARE
+        - misc tkinter
+        - fingerprints gui
+        - realmath ar
+    => GAMEDEV
+        - cryptid kisser
+        - human resources
+        - dialog system (ongoing)
+    => EMBEDDED
+        - droid b420
+
+ARTISTIC
+    => COMICS
+        - katzenjammer (probably its own category)
+        - "i dont want to be sick"
+    => DRAWING
+        - "portrait of the artist" (2025)
+        - figure drawing selections
+        - "mourning through music"
+        - ap art portfolio
+    => ANIMATION
+        - embedded selections from my youtube
+        - also include video art here
+    => DESIGN
+        - ramenstudios
+        - ndvgc
+        - blizzard art internship
+
+
+UHHH NEED TEMPLATES.... TEMPLATED MODULAR COMPONENTS.....
+
+PortfolioImageItem({content, caption, expanded})
+    => The template for portfolio items that primarily showcase images
+    => Structured as 
+        <container>
+            <content/>
+            <caption (expandable accordion)>
+                <further statement (expanded)>
+            <caption/>
+        </container>
+        (if param 'expanded' === false, caption is not expandable)
+
+IntImage
+    => Image that expands to full size when focused
+
+IntImageCarousel
+    => Carousel of IntImage components, for use with PortfolioImageItem
+    => Changes parent caption content on carousel item changed
+
+PortfolioProjectItem
+    => The template for portfolio items that route to a new page
+    => Structured as 
+        <container onClick={route to project page}>
+            <PortfolioImageItem content={teaser image} caption={project title} expanded=false/>
+        </container>
+
