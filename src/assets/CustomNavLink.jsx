@@ -1,4 +1,5 @@
-import Nav from 'react-bootstrap/Nav';
+import Nav from 'react-bootstrap/Nav'
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 // forces toggler closed on tab click
 const toggleHelper = () => {
@@ -18,6 +19,16 @@ export const CustomNavLink = (props) => {
         tabName = props.name
         LinkProps.href = props.href
         LinkProps.target = '_blank'
+    }
+    if (props.isDropdownItem) {
+        LinkProps.className = "nav-link"
+        return (
+            <NavDropdown.Item {...LinkProps}>
+                <div className='nav-link-container ' onClick={toggleHelper}>
+                    {tabName}
+                </div>
+            </NavDropdown.Item>
+        )
     }
     return (
         <Nav.Link class="nav-link"  aria-current="page" {...LinkProps}>

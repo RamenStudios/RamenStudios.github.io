@@ -30,12 +30,17 @@ a {
   filter: drop-shadow(0 0 2em #ff004cc5);
 }
 
-.nav-link-container {
+.dropdown-toggle.nav-link {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.nav-link-container, .nav-item.dropdown {
   background-color: #000000;
 }
 
 @media (min-width: 768px) {
-  .nav-link-container {
+  .nav-link-container, .nav-item.dropdown {
     position: relative;
     top: -.35em;
     height: 1em;
@@ -102,8 +107,6 @@ a {
   .toggler-override {
     position: relative;
     top: -1em;
-  }
-  .img-card-row {
   }
 }
 

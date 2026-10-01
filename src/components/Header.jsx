@@ -7,12 +7,15 @@ import { CustomNavLink } from '../assets/CustomNavLink'
 
 // generate tabs
 const MainTabs =    [
-                        {href: 'home'},
-                        {href: 'about'},
-                        {href: 'https://github.com/RamenStudios', isLink: true, name: 'GITHUB'},
-                        {href: 'projects'},
-                        {href: 'portfolio'},
-                        {href: 'videos'},
+                        [
+                            {href: 'home'},
+                            {href: 'about'},
+                            {href: 'https://github.com/RamenStudios', isLink: true, name: 'GITHUB'},
+                        ], 
+                        [
+                            {href: 'studio art', isDropdownItem: true},
+                            {href: 'computer science', isDropdownItem: true},
+                        ]
                     ]
 
 export const Header = ({logo, current}) =>
@@ -36,7 +39,10 @@ export const Header = ({logo, current}) =>
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav" className='align-items-end pt-3 mt-5 mt-lg-0'>
                             <Nav defaultActiveKey="#/home">
-                                {MainTabs.map((tab) => (CustomNavLink(tab)))}
+                                {MainTabs[0].map((tab) => (CustomNavLink(tab)))}
+                                <NavDropdown title="Portfolio" className="nav-link">
+                                    {MainTabs[1].map((tab) => (CustomNavLink(tab)))}
+                                </NavDropdown>
                             </Nav>
                         </Navbar.Collapse>
                     </div>
