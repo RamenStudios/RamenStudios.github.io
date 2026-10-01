@@ -24,7 +24,7 @@ export const CustomNavLink = (props) => {
         LinkProps.className = "nav-link"
         return (
             <NavDropdown.Item {...LinkProps}>
-                <div className='nav-link-container ' onClick={toggleHelper}>
+                <div className='nav-link-container list-inline-item' onClick={toggleHelper}>
                     {tabName}
                 </div>
             </NavDropdown.Item>

@@ -35,12 +35,12 @@ a {
   margin-right: 0;
 }
 
-.nav-link-container, .nav-item.dropdown {
+.nav-link-container, .nav-item.dropdown, .nav-item.dropend {
   background-color: #000000;
 }
 
-@media (min-width: 768px) {
-  .nav-link-container, .nav-item.dropdown {
+@media (min-width: 992px) {
+  .nav-link-container, .nav-item.dropdown, .nav-item.dropend {
     position: relative;
     top: -.35em;
     height: 1em;

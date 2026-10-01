@@ -40,7 +40,7 @@ export const Header = ({logo, current}) =>
                         <Navbar.Collapse id="basic-navbar-nav" className='align-items-end pt-3 mt-5 mt-lg-0'>
                             <Nav defaultActiveKey="#/home">
                                 {MainTabs[0].map((tab) => (CustomNavLink(tab)))}
-                                <NavDropdown title="Portfolio" className="nav-link">
+                                <NavDropdown title="Portfolio" drop="end" className="nav-link list-inline">
                                     {MainTabs[1].map((tab) => (CustomNavLink(tab)))}
                                 </NavDropdown>
                             </Nav>
