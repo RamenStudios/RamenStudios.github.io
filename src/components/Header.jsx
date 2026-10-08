@@ -7,24 +7,20 @@ import { CustomNavLink } from '../assets/CustomNavLink'
 
 // generate tabs
 const MainTabs =    [
-                        [
                             {href: 'home'},
                             {href: 'about'},
                             {href: 'https://github.com/RamenStudios', isLink: true, name: 'GITHUB'},
-                        ], 
-                        [
-                            {href: 'studio art', isDropdownItem: true},
-                            {href: 'computer science', isDropdownItem: true},
-                        ]
+                            {href: 'compsci'},
+                            {href: 'art'},
                     ]
 
 export const Header = ({logo, current}) =>
 {
     return(
-        <Navbar expand="lg" class="bebas" sticky="top" style={{backgroundColor: '#000000ff', height: '5rem'}} data-bs-theme="dark">
-            <Container className='gx-0' fluid style={{height:'5em'}}>
+        <Navbar expand="lg" className="bebas" sticky="top" data-bs-theme="dark">
+            <Container className='gx-0' fluid>
                     <div className="col-lg-3 d-none d-lg-inline-block">
-                        <Navbar.Brand href="/">
+                        <Navbar.Brand className="d-inline-block" href="/">
                             <img src={logo} className="navlogo d-none d-lg-inline-block" alt="Ramenstudios Logo"/>
                         </Navbar.Brand>
                     </div>
@@ -39,10 +35,7 @@ export const Header = ({logo, current}) =>
                         </Navbar.Toggle>
                         <Navbar.Collapse id="basic-navbar-nav" className='align-items-end pt-3 mt-5 mt-lg-0'>
                             <Nav defaultActiveKey="#/home">
-                                {MainTabs[0].map((tab) => (CustomNavLink(tab)))}
-                                <NavDropdown title="Portfolio" drop="end" className="nav-link list-inline">
-                                    {MainTabs[1].map((tab) => (CustomNavLink(tab)))}
-                                </NavDropdown>
+                                {MainTabs.map((tab) => (CustomNavLink(tab)))}
                             </Nav>
                         </Navbar.Collapse>
                     </div>

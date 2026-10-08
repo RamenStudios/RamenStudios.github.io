@@ -20,19 +20,9 @@ export const CustomNavLink = (props) => {
         LinkProps.href = props.href
         LinkProps.target = '_blank'
     }
-    if (props.isDropdownItem) {
-        LinkProps.className = "nav-link"
-        return (
-            <NavDropdown.Item {...LinkProps}>
-                <div className='nav-link-container list-inline-item' onClick={toggleHelper}>
-                    {tabName}
-                </div>
-            </NavDropdown.Item>
-        )
-    }
     return (
-        <Nav.Link class="nav-link"  aria-current="page" {...LinkProps}>
-            <div className='nav-link-container ' onClick={toggleHelper}>
+        <Nav.Link  aria-current="page" {...LinkProps}>
+            <div className='nav-link-container' onClick={toggleHelper}>
                 {tabName}
             </div>
         </Nav.Link>
