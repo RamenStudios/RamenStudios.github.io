@@ -50,6 +50,11 @@ a {
     position: relative;
     top: -.32em;
     height: 1em;
+    margin-bottom: clamp(0px, 20px - 1vw, 0.5rem);
+  }
+
+  .bebas.navbar {
+    height: 4.75vw;
   }
 
   .nav-link {
@@ -110,7 +115,7 @@ a {
   left: clamp(-115px, -120px + 1vw, -80px);
   clip-path: rect(-10px 200% 60.5% 5px);
   width: 19.375em;
-  height: 19em;
+  height: 23vw;
 }
 
 .navlogo, .toggler-logo, .toggler-override {
