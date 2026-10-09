@@ -12,6 +12,7 @@ const MainTabs =    [
                             {href: 'https://github.com/RamenStudios', isLink: true, name: 'GITHUB'},
                             {href: 'compsci'},
                             {href: 'art'},
+                            {href: 'resume'},
                     ]
 
 export const Header = ({logo, current}) =>

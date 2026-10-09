@@ -25,13 +25,7 @@ export const ImgCard = ({source, alt, caption}) => {
                 }}
             >
                 <div 
-                    class="d-flex align-items-end mt-0"
-                    style={{
-                        width:'1rem',
-                        height: '1.2rem',
-                        fontSize: '4rem',
-                        textShadow: '0.2rem 0.2rem 1.25rem #000000'
-                    }}
+                    class="d-flex align-items-end mt-0 imgcard-text"
                 >
                     {caption}
                 </div>

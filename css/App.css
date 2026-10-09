@@ -45,6 +45,20 @@ a {
   background-color: #000000;
 }
 
+.imgcard-text {
+  width: 1rem;
+  height: 1.2rem;
+  font-size: 10vw;
+  padding-bottom: 1vw;
+  text-shadow: 0.2rem 0.2rem 1.25rem #000000;
+}
+
+@media (max-width: 500px) {
+  .imgcard-text {
+    padding-bottom: 3vw;
+  }
+}
+
 @media (min-width: 992px) {
   .nav-link-container {
     position: relative;
@@ -55,6 +69,11 @@ a {
 
   .bebas.navbar {
     height: 4.75vw;
+  }
+
+  .imgcard-text {
+    font-size: 4rem;
+    padding-bottom: 0;
   }
 
   .nav-link {
